@@ -1,13 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-
 interface CTASectionProps {
   onCTAClick: () => void;
 }
-
-export function CTASection({ onCTAClick }: CTASectionProps) {
-  return (
-    <section className="py-20 bg-darker-surface">
+export function CTASection({
+  onCTAClick
+}: CTASectionProps) {
+  return <section className="py-20 bg-darker-surface">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           
@@ -27,20 +26,12 @@ export function CTASection({ onCTAClick }: CTASectionProps) {
             </h3>
             
             <div className="grid md:grid-cols-5 gap-4">
-              {[
-                "1. Consulta Estratégica Gratuita (60 minutos)",
-                "2. Análise Completa do Seu Negócio", 
-                "3. Proposta Personalizada",
-                "4. Desenvolvimento Premium",
-                "5. Lançamento e Otimização"
-              ].map((step, index) => (
-                <div key={index} className="text-center">
+              {["1. Consulta Estratégica Gratuita (60 minutos)", "2. Análise Completa do Seu Negócio", "3. Proposta Personalizada", "4. Desenvolvimento Premium", "5. Lançamento e Otimização"].map((step, index) => <div key={index} className="text-center">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-neon-green/20 rounded-full mb-3">
                     <span className="text-neon-green font-bold">{index + 1}</span>
                   </div>
                   <p className="text-sm text-foreground">{step.split('. ')[1]}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
           </Card>
 
@@ -53,9 +44,7 @@ export function CTASection({ onCTAClick }: CTASectionProps) {
                 Investimento:
               </h3>
               <div className="text-center">
-                <p className="text-2xl font-bold text-foreground mb-2">
-                  A partir de R$ 8.900
-                </p>
+                <p className="text-2xl font-bold text-foreground mb-2">A partir de R$ 1.500</p>
                 <p className="text-lg text-neon-green mb-2">em até 12x</p>
                 <p className="text-sm text-muted-foreground">
                   Valor pode variar conforme complexidade e funcionalidades
@@ -111,11 +100,7 @@ export function CTASection({ onCTAClick }: CTASectionProps) {
               </div>
             </div>
 
-            <Button 
-              onClick={onCTAClick}
-              size="lg"
-              className="px-12 py-4 bg-neon-green hover:bg-neon-green-glow text-darker-surface font-bold text-lg rounded-xl shadow-intense hover:shadow-neon transition-all duration-300 pulse-neon mb-6"
-            >
+            <Button onClick={onCTAClick} size="lg" className="px-12 py-4 bg-neon-green hover:bg-neon-green-glow text-darker-surface font-bold text-lg rounded-xl shadow-intense hover:shadow-neon transition-all duration-300 pulse-neon mb-6">
               QUERO MINHA CONSULTA GRATUITA AGORA
             </Button>
 
@@ -128,6 +113,5 @@ export function CTASection({ onCTAClick }: CTASectionProps) {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
