@@ -25,7 +25,7 @@
     --muted: 220 15% 15%;
     --muted-foreground: 220 10% 60%;
 
-    --accent: 90 80% 50%;
+    --accent: 170 76% 60%;
     --accent-foreground: 220 20% 8%;
 
     --destructive: 0 84% 60%;
@@ -33,25 +33,25 @@
 
     --border: 220 15% 20%;
     --input: 220 15% 15%;
-    --ring: 90 80% 50%;
+    --ring: 170 76% 60%;
 
     --radius: 0.75rem;
 
     /* Cores personalizadas para o tema */
-    --neon-green: 90 80% 50%;
-    --neon-green-glow: 90 80% 60%;
+    --neon-green: 170 76% 60%;
+    --neon-green-glow: 170 76% 70%;
     --dark-surface: 220 20% 12%;
     --darker-surface: 220 25% 6%;
     
     /* Gradientes */
     --gradient-hero: linear-gradient(135deg, hsl(220 25% 6%), hsl(220 20% 12%));
-    --gradient-accent: linear-gradient(90deg, hsl(90 80% 50%), hsl(90 80% 60%));
+    --gradient-accent: linear-gradient(90deg, hsl(170 76% 60%), hsl(170 76% 70%));
     --gradient-card: linear-gradient(145deg, hsl(220 20% 10%), hsl(220 15% 15%));
     
     /* Sombras */
-    --shadow-neon: 0 0 20px hsl(90 80% 50% / 0.3);
+    --shadow-neon: 0 0 20px hsl(170 76% 60% / 0.3);
     --shadow-card: 0 8px 32px hsl(220 25% 6% / 0.5);
-    --shadow-intense: 0 0 40px hsl(90 80% 50% / 0.6);
+    --shadow-intense: 0 0 40px hsl(170 76% 60% / 0.6);
 
     --radius: 0.75rem;
 
@@ -136,19 +136,19 @@
 
   @keyframes glow {
     from {
-      text-shadow: 0 0 5px hsl(90 80% 50%), 0 0 10px hsl(90 80% 50%), 0 0 15px hsl(90 80% 50%);
+      text-shadow: 0 0 3px hsl(170 76% 60%), 0 0 6px hsl(170 76% 60%), 0 0 9px hsl(170 76% 60%);
     }
     to {
-      text-shadow: 0 0 10px hsl(90 80% 60%), 0 0 20px hsl(90 80% 60%), 0 0 30px hsl(90 80% 60%);
+      text-shadow: 0 0 6px hsl(170 76% 70%), 0 0 12px hsl(170 76% 70%), 0 0 18px hsl(170 76% 70%);
     }
   }
 
   @keyframes pulse-neon {
     0%, 100% {
-      box-shadow: 0 0 15px hsl(90 80% 50% / 0.4);
+      box-shadow: 0 0 15px hsl(170 76% 60% / 0.4);
     }
     50% {
-      box-shadow: 0 0 25px hsl(90 80% 50% / 0.7), 0 0 35px hsl(90 80% 50% / 0.4);
+      box-shadow: 0 0 25px hsl(170 76% 60% / 0.7), 0 0 35px hsl(170 76% 60% / 0.4);
     }
   }
 
