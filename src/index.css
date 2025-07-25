@@ -136,10 +136,10 @@
 
   @keyframes glow {
     from {
-      text-shadow: 0 0 3px hsl(170 76% 60%), 0 0 6px hsl(170 76% 60%), 0 0 9px hsl(170 76% 60%);
+      text-shadow: 0 0 1.5px hsl(170 76% 60%), 0 0 3px hsl(170 76% 60%), 0 0 4.5px hsl(170 76% 60%);
     }
     to {
-      text-shadow: 0 0 6px hsl(170 76% 70%), 0 0 12px hsl(170 76% 70%), 0 0 18px hsl(170 76% 70%);
+      text-shadow: 0 0 3px hsl(170 76% 70%), 0 0 6px hsl(170 76% 70%), 0 0 9px hsl(170 76% 70%);
     }
   }
 
