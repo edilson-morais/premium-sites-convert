@@ -4,6 +4,7 @@ import { PortfolioSection } from "@/components/ui/portfolio-section";
 import { BenefitsSection } from "@/components/ui/benefits-section";
 import { TestimonialsSection } from "@/components/ui/testimonials-section";
 import { CTASection } from "@/components/ui/cta-section";
+import { Footer } from "@/components/ui/footer";
 import { useToast } from "@/hooks/use-toast";
 
 const LandingPage = () => {
@@ -24,6 +25,7 @@ const LandingPage = () => {
       <BenefitsSection />
       <TestimonialsSection />
       <CTASection onCTAClick={handleCTAClick} />
+      <Footer />
     </div>
   );
 };
