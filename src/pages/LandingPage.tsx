@@ -5,6 +5,7 @@ import { BenefitsSection } from "@/components/ui/benefits-section";
 import { TestimonialsSection } from "@/components/ui/testimonials-section";
 import { CTASection } from "@/components/ui/cta-section";
 import { Footer } from "@/components/ui/footer";
+import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { useToast } from "@/hooks/use-toast";
 
 const LandingPage = () => {
@@ -26,6 +27,7 @@ const LandingPage = () => {
       <TestimonialsSection />
       <CTASection onCTAClick={handleCTAClick} />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
